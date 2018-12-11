@@ -1,0 +1,35 @@
+<ObjectInfo>
+	<common>
+		<userName locator="name" value="username" />
+		<userPassword locator="name" value="password" />
+		<userLogin locator="xpath"
+			value="//div[@class='input-group-btn']/input" />
+		<homeLink locator="linktext" value="Home" />
+	</common>
+	<date>
+		<month locator="name" value="slctMonth" />
+		<year locator="name" value="slctYear" />
+		<day locator="classname" value="calendarcell" />
+	</date>
+	<messages>
+		<subject locator="xpath" value="//*[@name='subject']" />
+		<message locator="id" value="msg" />
+		<max locator="xpath"
+			value="//td[@align='left']/input[@value='Max']" />
+
+	</messages>
+
+	<Resources>
+		<Resource locator="xpath" value="//a[@title='Resources']" />
+		<newresource locator="xpath"
+			value="//td[@align='left']//input[@value='New Resource']" />
+	<CustomerViews>
+         <CustomerView locator="xpath" value="//a[@title='Custom Views']"/>
+	
+	</CustomerViews>
+		
+		<link locator="xpath" value="//input[@type='radio'][1]" />
+		<titleText locator="xpath" value="//input[@name='title']"/>
+		<url locator="xpath" value="//input[@name='resource_l']" />
+	</Resources>
+</ObjectInfo>

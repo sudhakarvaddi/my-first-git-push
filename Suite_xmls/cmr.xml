@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Regression" parallel="tests" >
+<parameter name="environment" value="qa"></parameter>
+  <test thread-count="5" name="sudha vsr" >
+   <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="Tests.Test_Case_2">
+        <methods>
+         <exclude name="dateSelect"/>
+         <exclude name="vsrDate"/>
+         <exclude name="menuButtons"/>
+         
+         <exclude name="messages"/>
+         <exclude name="Resouces"/>
+         <include name="CustomerViews"/>
+        </methods>
+        
+        
+      </class> <!-- Tests.TCcases -->
+    </classes>
+  </test> 
+  
+   <test thread-count="5" name="sudha vsr 1" >
+   <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="Tests.Test_Case_2">
+        <methods>
+         <exclude name="dateSelect"/>
+         <exclude name="vsrDate"/>
+         <exclude name="menuButtons"/>
+         
+         <exclude name="messages"/>
+         <exclude name="Resouces"/>
+         <include name="CustomerViews"/>
+        </methods>
+        
+        
+      </class> <!-- Tests.TCcases -->
+    </classes>
+  </test> 
+  
+</suite> <!-- Failed suite [Default suite] -->
+ 

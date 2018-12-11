@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]" parallel="tests">
+  <parameter name="environment" value="qa"/>
+  <test thread-count="5" name="sudha vsr 1(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Tests.Test_Case_2">
+        <methods>
+          <include name="logIn"/>
+          <include name="launchBrowserAndApplication"/>
+          <include name="env_Config"/>
+          <include name="logout"/>
+          <include name="CustomerViews"/>
+        </methods>
+      </class> <!-- Tests.Test_Case_2 -->
+    </classes>
+  </test> <!-- sudha vsr 1(failed) -->
+  <test thread-count="5" name="sudha vsr(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Tests.Test_Case_2">
+        <methods>
+          <include name="logIn"/>
+          <include name="launchBrowserAndApplication"/>
+          <include name="env_Config"/>
+          <include name="logout"/>
+          <include name="CustomerViews"/>
+        </methods>
+      </class> <!-- Tests.Test_Case_2 -->
+    </classes>
+  </test> <!-- sudha vsr(failed) -->
+</suite> <!-- Failed suite [Regression] -->
